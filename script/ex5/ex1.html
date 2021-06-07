@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body { font-size: 3rem;}
+    h1{
+        background:#fff000;
+    }
+    </style>
+    <script>
+        //  window.onload = function() {
+        //     var title = document.getElementById('main-title')
+        //     console.log(title)
+        //  }
+    // window.addEventListener('DOMContentLoaded', function() {
+    //     var title = document.getElementById('main-title')
+    //     console.log(title)
+    // })
+    </script>
+</head>
+<body>
+    <h1 id="main-title">
+        <span >hello</span>
+        DOM (Doucment Object Model) </h1>
+    <article>
+        <header class="main-header">header1</header>
+        <section>
+            <header>s header</header>
+            section 1
+        </section>
+        <section>
+            <header>s header</header>
+            section 2
+        </section>
+    </article>    
+
+    <script>
+    var title = document.getElementById('main-title')
+    var titleSpan = title.getElementsByTagName('span')
+    console.log(title)
+    console.log(titleSpan[0]) 
+    </script>
+</body>
+</html>
