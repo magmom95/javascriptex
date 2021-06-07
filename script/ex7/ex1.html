@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body { font-size: 3rem;}
+    h1{
+        background:#fff000;
+    }
+    .lee {
+        display: inline-block;
+        list-style: none;
+    }
+    .lee img{
+        width: 300px
+    }
+    .special{
+        background: pink;
+    }
+    .link-naver{
+        color:red;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">
+        DOM (Doucment Object Model) 
+        <small>small</small>
+    </h1>
+    <ul>
+        <li class="lee">
+            <img src="a.jpg">
+            <a class="link-naver" href="https://naver.com">naver</a>
+        </li>
+        <li class="lee"><img src="b.png"></li>
+        <li class="lee"><img src="a.jpg"></li>
+    </ul>
+    
+    <script>
+    var link = document.querySelector('.lee a')
+    link.classList.add('special')
+    setTimeout(function(){
+        link.classList.remove('link-naver')
+    }, 2000)
+    console.log(link.classList.contains('special'))
+
+    </script>
+ 
+</body>
+</html>
